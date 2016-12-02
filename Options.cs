@@ -26,7 +26,7 @@ namespace FolderFlatter
                 AddDashesToOption = true
             };
 
-            help.AddPreOptionsLine("Under Creative Commons 3.0 BY-SA");
+            help.AddPreOptionsLine("Under MIT License");
             help.AddPreOptionsLine("Usage: FolderFlatter -r RootPath -o OutputPath -e Extensions");
             help.AddOptions(this);
 
