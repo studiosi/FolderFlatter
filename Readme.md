@@ -24,12 +24,33 @@ Tells the directory we want to copy the found files to.
 
 Tells the program the extensions we are trying to find, separated by commas.
 
-## Example
+**-v** or **--overwrite**
+
+Use if you want the program to overwrite the files in the output folder, instead of giving consecutive names. (Optional)
+
+**-m** or **--empty**
+
+Use if you want to delete all the files in the output folder before proceeding. Use with caution. (Optional)
+
+## Examples
 
 ``FolderFlatter -r c:/files -o c:/images -e bmp,jpg,gif``
 
 Will search recursively for all the files in c:/files and copy the ones with the extensions bmp, 
-jpg or gif to c:/images
+jpg or gif to c:/images, without overwriting if there are many files with the same name in the origin folder.
+
+``FolderFlatter -r c:/files -o c:/images -e bmp,jpg,gif -m``
+
+Will do the same as before, but emptying the output folder before starting to copy any file.
+
+``FolderFlatter -r c:/files -o c:/images -e bmp,jpg,gif -v``
+
+Will do the same as before, but overwriting if the file has the same name as something that is already in the 
+output folder.
+
+``FolderFlatter -r c:/files -o c:/images -e bmp,jpg,gif -m -v``
+
+Will combine the two parameters explained before.
 
 ## License
 
