@@ -1,4 +1,4 @@
-##FolderFlatter
+## FolderFlatter
 
 
 FolderFlatter is a command line tool that allows you to copy all the files with a certain extension or extensions recursively 
